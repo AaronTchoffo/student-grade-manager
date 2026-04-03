@@ -81,7 +81,7 @@ class Subject():
 
     def subject_average(self, subjects, students):
         """Calculates and returns the average grade for a subject"""
-        subjects[self.id]["grades"] = self.all_grades(self.id, students)
+        subjects[self.id]["grades"] = self.all_grades(students)
         return sum(subjects[self.id]["grades"]) / len(
             subjects[self.id]["grades"])
 
